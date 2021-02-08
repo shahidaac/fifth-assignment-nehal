@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous" />
+      <!-- custom css -->
+    <link rel="stylesheet" href="myStyle.css" />
+
+    <title>MEAL API (fifth-nehal)</title>
+  </head>
+  <body>
+    <main>
+      <!-- search bar area -->
+      <section id="searchBar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex">
+              <input id="searchTerm"class="form-control form-control-lg" type="search" placeholder="search your meal..." aria-label="Search"/>
+              <span class="btnSpace">
+                  <button id="search" class="btn btn-secondary btn-lg" type="submit">Search
+                </button>
+            </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- meal area -->
+      <section >
+        <div class="container">
+          <div class="row">
+            <div id="mealIngredients"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div id="dishItem" class="d-flex flex-wrap"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+       <!-- data load api to web -->
+    <script src="script-api.js"></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
